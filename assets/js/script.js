@@ -1,9 +1,9 @@
 import moment from 'moment';
-moment().format();
+
 
 $(document).ready(function () {
     
-    $("#currentDay").text(moment().format("MMMM DD YYYY, hh:mm:ss a")); 
+    $("#currentDay").text(moment().format("MMMM DD, YYYY - hh:mm:ss a")); 
     
     $(".saveBtn").on("click", function () {
         
@@ -63,3 +63,4 @@ $(document).ready(function () {
     hourTracker(); 
 })
 
+moment().format();
