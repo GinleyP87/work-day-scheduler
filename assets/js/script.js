@@ -1,37 +1,39 @@
-import moment from 'moment';
 
+//current day and time
+var currentDay = moment().format("dddd LL");
+$("#currentDay").append(currentDay);
 
+var currentTime = moment().format("LT");
+$("#currentTime").append(currentTime);
+
+//save button
 $(document).ready(function () {
-    
-    $("#currentDay").text(moment().format("MMMM DD, YYYY - hh:mm:ss a")); 
-    
     $(".saveBtn").on("click", function () {
-        
-        console.log(this);
-        var input = $(this).siblings(".description").val();
+        var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
-        
-        localStorage.setItem(time, input);
+        localStorage.setItem(time, text);
     })
     
-    $("#hour09 .description").val(localStorage.getItem("hour09"));
+    $("#hour8 .description").val(localStorage.getItem("hour8"));
 
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     
     $("#hour11 .description").val(localStorage.getItem("hour11"));
     
     $("#hour12 .description").val(localStorage.getItem("hour12"));
     
-    $("#hour01 .description").val(localStorage.getItem("hour01"));
+    $("#hour13 .description").val(localStorage.getItem("hour13"));
     
-    $("#hour02 .description").val(localStorage.getItem("hour02"));
+    $("#hour14 .description").val(localStorage.getItem("hour14"));
     
-    $("#hour03 .description").val(localStorage.getItem("hour03"));
+    $("#hour15 .description").val(localStorage.getItem("hour15"));
     
-    $("#hour04 .description").val(localStorage.getItem("hour04"));
+    $("#hour16 .description").val(localStorage.getItem("hour16"));
     
-    $("#hour05 .description").val(localStorage.getItem("hour05"));
+    $("#hour17 .description").val(localStorage.getItem("hour17"));
 
     function hourTracker() {
         var currentHour = moment().hour();
@@ -62,5 +64,3 @@ $(document).ready(function () {
     }
     hourTracker(); 
 })
-
-moment().format();
