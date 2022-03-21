@@ -17,8 +17,8 @@ This application was built with HTML, CSS, Javascript, bootstrap, and moment.js.
 ## Usage</br></br>
 
 ## Contact Me</br></br>
-App deployed at: https://ginleyp87.github.io/work-day-scheduler/
-Check out my GitHub: [GinleyP87](https://github.com/GinleyP87)
+App deployed at: https://ginleyp87.github.io/work-day-scheduler/</br>
+Check out my GitHub: [GinleyP87](https://github.com/GinleyP87)</br>
 E-mail me at: patginleyjr@gmail.com
 
 
