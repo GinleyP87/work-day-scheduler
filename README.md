@@ -15,6 +15,7 @@ Clone the code from the repo, run "npm i" to install dependencies.</br>
 This application was built with HTML, CSS, Javascript, bootstrap, and moment.js.</br></br>
 
 ## Usage</br></br>
+![schedule-screenshot](assets/images/schedule-screenshot.png)
 
 ## Contact Me</br></br>
 App deployed at: https://ginleyp87.github.io/work-day-scheduler/</br>
