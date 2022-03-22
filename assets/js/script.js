@@ -11,6 +11,8 @@ $(document).ready(function () {
     $(".saveBtn").on("click", function () {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
+// change save button to task completed button. to confirm on schedule. 
+// completely different background color. different text color. as to show it's apart from time colors... 
 
         localStorage.setItem(time, text);
     })
